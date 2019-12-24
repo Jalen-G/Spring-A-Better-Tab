@@ -1,0 +1,512 @@
+body {
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+        /* bottom, image */
+    url(https://source.unsplash.com/1600x900/?landscape);
+}
+
+.row {
+    display: flex;
+}
+
+.center {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.center-text {
+    margin-top: 10%;
+    white-space: nowrap;
+    text-align: center;
+}
+  
+.column {
+    flex: 50%;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+div.absolute-left {
+    position: absolute;
+    bottom: 50px;
+    width: 50%;
+    left: 16px;
+  }
+
+div.absolute-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+  body {
+      text-transform: capitalize;
+  }
+  
+  * {
+      margin: 0;
+      outline: none;
+  }
+  
+  body,
+  input,
+  button {
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .noFill {
+      fill: none;
+  }
+  
+  .todosection {
+    background: #13131395;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .todosection h2 {
+      position: relative;
+      padding: 15px;
+      color: white;
+  }
+  
+  header {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      padding: 15px;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      background: -webkit-linear-gradient(45deg, #3d99ff, #3c6cde);
+      background: -o-linear-gradient(45deg, #3d99ff, #3c6cde);
+      background: linear-gradient(45deg, white, white);
+      -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header input {
+      width: 100%;
+      height: 50px;
+      float: left;
+      color: black;
+      font-size: 15px;
+      font-weight: 400;
+      text-indent: 18px;
+      padding: 0 80px 0 0;
+      background: rgba(255, 255, 255, 0.2);
+      border: 0px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+  
+  header input::-webkit-input-placeholder {
+      color: rgba(10, 10, 10, 0.75);
+  }
+  
+  header input:-moz-input-placeholder {
+      color: rgba(10, 10, 10, 0.75);
+  }
+  
+  header input::-moz-input-placeholder {
+      color: rgba(10, 10, 10, 0.75);
+  }
+  
+  header input:-ms-input-placeholder {
+      color: rgba(10, 10, 10, 0.75);
+  }
+  
+  header button {
+      width: 50px;
+      height: 25px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 2;
+      background: #fff;
+      border: 0px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  
+  header button:hover {
+      -webkit-box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+              box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+  
+  header button svg {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -12px 0 0 -8px;
+  }
+  
+  header button svg .fill {
+      fill: #5f5f5fad;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  
+  header button:hover svg .fill {
+      fill: #111111;
+  }
+  
+  .container {
+      width: 100%;
+      padding: 15px;
+  }
+  
+  ul.todo {
+      width: 100%;
+      color: rgb(10, 10, 10, 0.75);
+  }
+  
+  ul.todo li {
+      width: 100%;
+      min-height: 50px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+      background: #fff;
+      position: relative;
+      -webkit-box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+              box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+      margin: 0 0 10px 0;
+      padding: 14px 100px 14px 14px;
+      word-break: break-word;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  
+  ul.todo li:hover {
+      -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+  
+  ul.todo li:last-of-type {
+      margin: 0;
+  }
+  
+  ul.todo li .buttons {
+      width: 100px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+  
+  ul.todo li .buttons button {
+      width: 50px;
+      height: 50px;
+      float: left;
+      background: none;
+      position: relative;
+      border: 0px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+  
+  ul.todo li .buttons button:last-of-type:before {
+      content: '';
+      width: 1px;
+      height: 30px;
+      background: #edf0f1;
+      position: absolute;
+      top: 10px;
+      left: 0;
+  }
+  
+  ul.todo li .buttons button svg {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -11px 0 0 -11px;
+  }
+  
+  ul.todo li .buttons button.complete svg {
+      border-radius: 11px;
+      border: 1.5px solid #25b99a;
+      -webkit-transition: background 0.2s ease;
+      -o-transition: background 0.2s ease;
+      transition: background 0.2s ease;
+  }
+  
+  ul.todo#completed li .buttons button.complete svg {
+      background: #25b99a;
+      border: 0px;
+  }
+  
+  ul.todo:not(#completed) li .buttons button.complete:hover svg {
+      background: rgba(37, 185, 154, 0.75);
+  }
+  
+  ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
+      fill: #fff;
+  }
+  
+  ul.todo#completed li .buttons button.complete svg .fill {
+      fill: #fff;
+  }
+  
+  ul.todo li .buttons button svg .fill {
+      -webkit-transition: fill 0.2s ease;
+      -o-transition: fill 0.2s ease;
+      transition: fill 0.2s ease;
+  }
+  
+  ul.todo li .buttons button.remove svg .fill {
+      fill: #c0cecb;
+  }
+  
+  ul.todo li .buttons button.remove:hover svg .fill {
+      fill: #ff4762;
+  }
+  
+  ul.todo li .buttons button.complete svg .fill {
+      fill: #25b99a;
+  }
+  
+  ul.todo#completed {
+      position: relative;
+      padding: 60px 0 0 0;
+      color: rgb(255, 37, 70);
+  }
+  
+  ul.todo#completed:before {
+      content: '';
+      width: 150px;
+      height: 1px;
+      background: #d8e5e0;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      margin: 0 0 0 -75px;
+  }
+  
+  ul.todo#todo:empty:after {
+      content: 'You have nothing to-do!';
+      margin: 15px 0 0 0;
+  }
+  
+  ul.todo#completed:empty:after {
+      content: 'You have yet to complete any tasks.';
+  }
+  
+  ul.todo#todo:after,
+  ul.todo#completed:after {
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+  }
+  
+  /* reset */
+  
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      vertical-align: baseline
+  }
+  
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+      display: block
+  }
+  
+  body,
+  html {
+      width: 100%;
+      height: 100%
+  }
+  
+  body {
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  }
+  
+  ol,
+  ul {
+      list-style: none
+  }
+  
+  hr {
+      border: 0;
+      height: 1px;
+      background: #ccc
+  }
+  
+  blockquote,
+  q {
+      quotes: none
+  }
+  
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+      content: '';
+      content: none
+  }
+  
+  table {
+      border-collapse: collapse;
+      border-spacing: 0
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box
+  }
+  
+  html,
+  input,
+  select,
+  textarea,
+  button,
+  a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
